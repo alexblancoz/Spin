@@ -28,7 +28,12 @@ settings =
 	iphone =
 	{
 		plist =
-		{
+		{	
+			UIAppFonts = 
+			{
+				"fonts/SIPLDB__.TTF",
+				"fonts/SIPLL__.TTF"
+			},
 			UIStatusBarHidden = false,
 			UIPrerenderedIcon = true, -- set to false for "shine" overlay
 			--UIApplicationExitsOnSuspend = true, -- uncomment to quit app on suspend

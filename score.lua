@@ -6,10 +6,10 @@ M.score = 0  -- Set the initial score to 0
 function M.init( options )
    local customOptions = options or {}
    local opt = {}
-   opt.fontSize = customOptions.fontSize or 24
+   opt.fontSize = customOptions.fontSize or 50
    opt.font = customOptions.font or native.systemFontBold
    opt.x = customOptions.x or display.contentCenterX
-   opt.y = customOptions.y or opt.fontSize*0.5
+   opt.y = customOptions.y or opt.contentCenterY
    opt.maxDigits = customOptions.maxDigits or 6
    opt.leadingZeros = customOptions.leadingZeros or false
    --M.filename = customOptions.filename or "scorefile.txt"
@@ -19,6 +19,8 @@ function M.init( options )
    end
    M.format = "%" .. prefix .. opt.maxDigits .. "d"
    M.scoreText = display.newText( string.format(M.format, 0), opt.x, opt.y, opt.font, opt.fontSize )
+   M.scoreText.alpha = .08
+   M.scoreText:setFillColor(0,0,0)
    return M.scoreText
 end
 

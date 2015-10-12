@@ -37,7 +37,7 @@ function M.physicsData(scale)
                     
                     
                     {
-                    pe_fixture_id = "purple", density = 2, friction = 0, bounce = 1.01, 
+                    pe_fixture_id = "yellow", density = 2, friction = 0, bounce = 1.01, 
                     filter = { categoryBits = 1, maskBits = 65535, groupIndex = 0 },
                     shape = {   -111, -233  ,  -105, -227  ,  -246, -86  ,  -252, -92  }
                     }
@@ -48,7 +48,7 @@ function M.physicsData(scale)
                     
                     
                     {
-                    pe_fixture_id = "red", density = 2, friction = 0, bounce = 1.01, 
+                    pe_fixture_id = "aqua", density = 2, friction = 0, bounce = 1.01, 
                     filter = { categoryBits = 1, maskBits = 65535, groupIndex = 0 },
                     shape = {   111, -234  ,  252, -93  ,  245, -86  ,  104, -227  }
                     }
@@ -59,7 +59,7 @@ function M.physicsData(scale)
                     
                     
                     {
-                    pe_fixture_id = "green", density = 2, friction = 0, bounce = 1.01, 
+                    pe_fixture_id = "red", density = 2, friction = 0, bounce = 1.01, 
                     filter = { categoryBits = 1, maskBits = 65535, groupIndex = 0 },
                     shape = {   252, 93  ,  111, 233  ,  105, 227  ,  245, 86  }
                     }
